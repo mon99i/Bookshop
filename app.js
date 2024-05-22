@@ -16,4 +16,4 @@ app.use("/users/", userRouter);
 app.use("/books/", bookRouter);
 app.use("/likes/", likeRouter);
 app.use("/carts/", cartRouter);
-app.use("/s/", orderRouter);
+app.use("/orders/", orderRouter);
