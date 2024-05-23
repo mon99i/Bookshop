@@ -87,7 +87,7 @@ const passwordResetRequest = (req, res) => {
     )
 };
 
-const passwordReset = (req, res) => {
+const passwordReset = (req, res) => { 
     const {email, password} = req.body;
 
     let sql = 'UPDATE users SET password=?, salt=? WHERE email=?';
