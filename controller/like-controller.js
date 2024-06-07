@@ -1,9 +1,7 @@
+const ensureAuthorization = require('../auth'); // 인증 모듈
 const conn = require('../mariadb');
 const {StatusCodes} = require('http-status-codes');
 const jwt = require('jsonwebtoken');
-const dotenv = require('dotenv');
-const ensureAuthorization = require('../auth'); // 인증 모듈
-dotenv.config();
 
 const addLike = (req, res) => {
 
